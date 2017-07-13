@@ -43,6 +43,18 @@
                 margin-bottom: 10px;
             }
             
+            .crop {
+                object-fit: cover;
+            }
+            
+            .card-img-top {
+                object-fit: cover;
+            }
+            
+            .resize-card {
+                width: 318px;
+            }
+            
             @media only screen and (max-width: 480px) {
                 
                 #title {
@@ -66,7 +78,7 @@
                 }
                 
             }
-
+            
         </style>
   
     </head>
@@ -129,7 +141,7 @@
                 <div class="col-md">
                     
                     <div class="card">
-                        <img class="card-img-top" src="images/test%20image.svg" alt="Card image cap">
+                        <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Yash Jethoo</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
@@ -142,7 +154,7 @@
                 <div class="col-md">
                     
                     <div class="card">
-                        <img class="card-img-top" src="images/test%20image.svg" alt="Card image cap">
+                        <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Khalid Talakshi</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
@@ -155,7 +167,7 @@
                 <div class="col-md">
                     
                     <div class="card">
-                        <img class="card-img-top" src="images/test%20image.svg" alt="Card image cap">
+                        <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Khalid Talakshi</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
@@ -172,7 +184,7 @@
                 <div class="col-md">
                     
                     <div class="card">
-                        <img class="card-img-top" src="images/test%20image.svg" alt="Card image cap">
+                        <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Yash Jethoo</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
@@ -185,7 +197,7 @@
                 <div class="col-md">
                     
                     <div class="card">
-                        <img class="card-img-top" src="images/test%20image.svg" alt="Card image cap">
+                        <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Khalid Talakshi</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
@@ -198,7 +210,7 @@
                 <div class="col-md">
                     
                     <div class="card">
-                        <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
+                        <img class="card-img-top crop" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Khalid Talakshi</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
@@ -246,7 +258,36 @@
         <script src="Resources/js/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="Resources/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="Resources/Bootstrap/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript" src="/Resources/js/jquery-3.1.1.slim.min.js">
+            
+            var cardWidth = document.getElementsByClassName("card").width()
+            
+            if (cardWidth >= 318px) {
+                
+                document.getElementsByClassName("card").addClass("resize-card");
+            
+            } //else {
+                
+                //document.getElementsByClassName("card").removeClass("resize-card");
+                
+            //}
+        
+        </script>
   
     </body>
     
 </html>
+
+<!--- 
+
+Picture Sizes at Different Viewports
+
+320: 288 = 90%
+375: 343.33 = 92%
+425: 393.33 = 93%
+
+max width: 508px;
+
+
+-->
