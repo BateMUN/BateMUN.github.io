@@ -6,8 +6,6 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-                <link rel="stylesheet" href="Resources/css/queries.css">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="Resources/Bootstrap/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -49,10 +47,16 @@
             
             .card-img-top {
                 object-fit: cover;
+                overflow-x: hidden;
             }
             
             .resize-card {
                 width: 318px;
+            }
+            
+            #map {
+                width: 65vw;
+                height: 300px; 
             }
             
             @media only screen and (max-width: 480px) {
@@ -67,14 +71,24 @@
                 }
                 
                 .card {
-                    width: 100%;
+                    width: 80%;
                 }
+                
+                #map {
+                    width: 300px;
+                }
+                
             }
             
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 768px) {
                 
                 .last-card {
                     margin-top: 10px;
+                }
+                
+                
+                #map {
+                    width: 480px;
                 }
                 
             }
@@ -111,13 +125,7 @@
         <div class="container" style="padding-top:5px;">
                 
             <h1 id="title">Conference</h1>
-            
-            <div class="row">
-                
-                <h2>About</h2>
-            
-            </div>
-            
+                    
             <div class="row">
                 
                 <h2>Itenerary</h2>
@@ -130,6 +138,22 @@
             
             </div>
             
+            <div class="row venue-row">
+            
+                <div class="col-md">
+                    
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.2601552282385!2d-79.75213508463715!3d43.37158407913187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b60863856064d%3A0xda963e744fb51374!2sRobert+Bateman+High+School!5e0!3m2!1sen!2sca!4v1505151853352" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+                </div>
+                
+                <div class="col-md">
+                    
+                    <p><strong>Robert Bateman High School</strong><br />5151 New St<br />Burlington, Ontario<br />L7L 7J4</p>
+                
+                </div>
+                
+            </div>
+            
             <div class="row">
                 
                 <h2>Secretariat</h2>
@@ -140,7 +164,7 @@
                 
                 <div class="col-md">
                     
-                    <div class="card">
+                    <div class="card"  id="card1">
                         <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Yash Jethoo</h4>
@@ -153,20 +177,7 @@
                 
                 <div class="col-md">
                     
-                    <div class="card">
-                        <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title">Khalid Talakshi</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
-                            
-                        </div>
-                    </div>
-                
-                </div>
-                
-                <div class="col-md">
-                    
-                    <div class="card">
+                    <div class="card" id="card2">
                         <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Khalid Talakshi</h4>
@@ -183,7 +194,7 @@
                 
                 <div class="col-md">
                     
-                    <div class="card">
+                    <div class="card" id="card3">
                         <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Yash Jethoo</h4>
@@ -196,7 +207,7 @@
                 
                 <div class="col-md">
                     
-                    <div class="card">
+                    <div class="card" id="card4" >
                         <img class="card-img-top" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Khalid Talakshi</h4>
@@ -207,9 +218,27 @@
                 
                 </div>
                 
+               
+            </div>
+            
+            <div class="row">
+            
                 <div class="col-md">
                     
-                    <div class="card">
+                    <div class="card" id="card5">
+                        <img class="card-img-top"src="images/test-image.png" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Khalid Talakshi</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Co-Secretary General</h6>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+                 <div class="col-md">
+                    
+                    <div class="card"  id="card6">
                         <img class="card-img-top crop" src="images/test-image.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Khalid Talakshi</h4>
@@ -219,6 +248,7 @@
                     </div>
                 
                 </div>
+            
             
             </div>
             
@@ -259,22 +289,23 @@
         <script src="Resources/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="Resources/Bootstrap/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         
-        <script type="text/javascript" src="/Resources/js/jquery-3.1.1.slim.min.js">
-            
-            var cardWidth = document.getElementsByClassName("card").width()
-            
-            if (cardWidth >= 318px) {
-                
-                document.getElementsByClassName("card").addClass("resize-card");
-            
-            } //else {
-                
-                //document.getElementsByClassName("card").removeClass("resize-card");
-                
-            //}
+        <script type="text/javascript" src="/Resources/js/jquery-3.1.1.slim.min.js"></script>
         
-        </script>
-  
+        <!--<script type="text/javascript">
+
+            
+            window.onload = function() {
+                
+                if(window.innerWidth >= 480) {
+                    for (var i=1; i <= 6; i++) {
+                        document.getElementById("card"+i).className += " resize-card";
+                    }
+                }
+                
+            };
+
+        </script>-->
+
     </body>
     
 </html>
