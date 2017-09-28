@@ -33,9 +33,9 @@
                 text-align: center;
             }
             
-            .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+            /*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
                 width: 10%;
-            }
+            }*/
             
             .footer {
                 background-color: #676767;
@@ -87,8 +87,20 @@
             }
 
             .timeSlotRow {
-                align-content: center;
+                align-self: center;
                 display: inline-block;
+                text-align: center;
+            }
+            
+            .conference {
+                text-align: center;
+            }
+            
+            .conference .row h2 { 
+                text-align: center;
+            }
+            
+            .center {
                 text-align: center;
             }
             
@@ -129,6 +141,12 @@
             .row {
                 margin-top: 5px;
             }
+            
+            .jumbotron {
+                text-align: center;
+            }
+            
+            
         
         </style>
   
@@ -165,17 +183,22 @@
                
             <section class="main" id="main">
 
-                  <h1 class="display-3" id="title">BateMUN 2018</h1>
+                  <div class="jumbotron">
+                    <h1 class="display-3">BateMun 2018</h1>
+                    <p class="lead">Creating the Leaders of Tomorrow</p>
+                    <hr class="my-4">
+                      
+                </div>
 
             </section>
             
             <section class="conference" id="conference">
                 
-                    <h1 id="title">Conference</h1>
+                    <h1 class="display-3">Conference</h1>
 
                 <div class="row">
 
-                    <h2>Itenerary</h2>
+                    <h2 class="center">Itenerary</h2>
 
                 </div>
 
@@ -196,7 +219,7 @@
 
                 <div class="row">
 
-                    <h2>Venue</h2>
+                    <h2 class="center">Venue</h2>
 
                 </div>
 
@@ -204,7 +227,7 @@
 
                     <div class="col-8">
 
-                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.2601552282385!2d-79.75213508463715!3d43.37158407913187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b60863856064d%3A0xda963e744fb51374!2sRobert+Bateman+High+School!5e0!3m2!1sen!2sca!4v1505151853352" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.2601552282385!2d-79.75213508463715!3d43.37158407913187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b60863856064d%3A0xda963e744fb51374!2sRobert+Bateman+High+School!5e0!3m2!1sen!2sca!4v1505151853352" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
 
                     </div>
 
@@ -478,6 +501,7 @@
             
         
         </div>
+        
         
         
         
