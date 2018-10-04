@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BateMUN.github.io.iml" filepath="$PROJECT_DIR$/.idea/BateMUN.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BateMUNInterface.iml" filepath="$PROJECT_DIR$/.idea/BateMUNInterface.iml" />
     </modules>
   </component>
 </project>

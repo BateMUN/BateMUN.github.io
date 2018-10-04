@@ -1,0 +1,178 @@
+* {
+    font-family: Arial;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.block {
+    border: 1.5px solid;
+    border-radius:20px;
+    border-color:black;
+    overflow:hidden;
+    background: #0B89D2;
+    opacity:50%;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.blockText {
+    color: #ffffff;
+}
+
+#committeeMembers {
+    height: 181px;
+    overflow-y: auto;
+}
+
+#speakersList{
+    height: 181px;
+    overflow-y: auto;
+}
+
+#textbox {
+
+    position:relative;
+    width:100%;
+    height:75%;
+}
+textarea{
+    font-size:2.5vh;
+    border: none;
+    overflow: auto;
+    outline: none;
+    color:white;
+    background: rgba(25, 25, 25,0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#resolutions{
+    top:1%;
+    width:49%;
+    left:50%;
+    height:74%;
+    position:absolute;
+    margin-top: 10px;
+}
+
+#timerholder{
+    position:relative;
+    text-align:center;
+    margin-top:0%;
+}
+#timer, #debateTimer{
+
+    font-family:'Helvetica Neue';
+    font-size:10.5vh;
+    text-align:center;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+#startbutton {
+    position:absolute;
+    width:20%;
+    height:37%;
+    bottom:0%;
+    left:0;
+}
+#stopbutton {
+    position:absolute;
+    width:20%;
+    height:37%;
+    bottom:0%;
+    left:20%;
+}
+#resetbutton {
+    position:absolute;
+    width:20%;
+    height:37%;
+    bottom:0%;
+    left:40%;
+}
+
+.clickbutton{
+    color:white;
+    background: rgba(25, 25, 25, .65);
+    font-size:2vh;
+    border-color:none;
+    border-left:none;
+    border-right:1.5px solid grey;
+    box-shadow:none;
+    border-top: 1.5px solid;
+    border-bottom:none;
+}
+
+#speakTimeButton {
+    position:absolute;
+    width:20%;
+    height:37%;
+    bottom:0%;
+    left:60%;
+}
+
+#speakButton {
+    position:absolute;
+    width:20%;
+    height:37%;
+    bottom:0%;
+    left:80%;
+}
+
+#timer {
+    top:77.5%;
+    width:49%;
+    left:50%;
+    height:21%;
+    position:absolute;
+}
+
+.memberText:hover {
+    text-decoration: underline;
+}
+
+#secondaryTimerRow {
+    display: none;
+}
+
+#debateTimer {
+    position:absolute;
+    width:48.5%;
+    /*left:50%;*/
+    height:21%;
+}
+
+#debateTimeButton {
+    position:absolute;
+    width:25%;
+    height:37%;
+    bottom:0%;
+    left:75%;
+}
+
+#startDebatebutton {
+    position:absolute;
+    width:25%;
+    height:37%;
+    bottom:0%;
+    left:0;
+}
+#stopDebatebutton {
+    position:absolute;
+    width:25%;
+    height:37%;
+    bottom:0%;
+    left:25%;
+}
+#resetDebatebutton {
+    position:absolute;
+    width:25%;
+    height:37%;
+    bottom:0%;
+    left:50%;
+}

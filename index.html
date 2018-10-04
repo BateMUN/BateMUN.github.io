@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BateMUN Interface</title>
+
+        <script src="jquery-3.2.1.slim.min.js"></script>
+        <script src="script.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+
+    </head>
+    <body onload="show()">
+
+        <div class="col span-1-of-2">
+
+            <div class="row block">
+
+                <h2>Committee Details</h2>
+                <hr />
+                <p class="blockText" id="committeeNameText" onload="loadCommitteeDetails()" onclick="changeCommitteeDetails()">Security Council</p>
+                <p class="blockText" id="committeeTopicText" onload="loadCommitteeDetails()" onclick="changeCommitteeTopic()">Syrian Refugee Crisis</p>
+                <p class="blockText" id="debateText" onload="loadDebate()" onclick="changeDebate()">Formal Consideration</p>
+            </div>
+
+            <div class="row block" id="memberRow">
+
+                <h2>Countries/Committee Members</h2>
+                <hr />
+                <div id="committeeMembers">
+
+                    <p class="blockText memberText" id="member0" onclick="addSpeaker(this.id)">USA</p>
+                    <p class="blockText memberText" id="member1" onclick="addSpeaker(this.id)">China</p>
+                    <p class="blockText memberText" id="member2" onclick="addSpeaker(this.id)">United Kingdom</p>
+                    <p class="blockText memberText" id="member3" onclick="addSpeaker(this.id)">Russia</p>
+                    <p class="blockText memberText" id="member4" onclick="addSpeaker(this.id)">France</p>
+                    <p class="blockText memberText" id="member5" onclick="addSpeaker(this.id)">Bolivia</p>
+                    <p class="blockText memberText" id="member6" onclick="addSpeaker(this.id)">Egypt</p>
+                    <p class="blockText memberText" id="member7" onclick="addSpeaker(this.id)">Ethiopia</p>
+                    <p class="blockText memberText" id="member8" onclick="addSpeaker(this.id)">Italy</p>
+                    <p class="blockText memberText" id="member9" onclick="addSpeaker(this.id)">Japan</p>
+                    <p class="blockText memberText" id="member10" onclick="addSpeaker(this.id)">Kazakhstan</p>
+                    <p class="blockText memberText" id="member11" onclick="addSpeaker(this.id)">Senegal</p>
+                    <p class="blockText memberText" id="member12" onclick="addSpeaker(this.id)">Sweden</p>
+                    <p class="blockText memberText" id="member13" onclick="addSpeaker(this.id)">Ukraine</p>
+                    <p class="blockText memberText" id="member14" onclick="addSpeaker(this.id)">Uruguay</p>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row block" id="speakerRow">
+
+                <h2>Speakers List</h2>
+
+                <hr />
+
+                <div id="speakersList">
+                    <p class="blockText speakerItem" id="speaker0" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker1" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker2" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker3" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker4" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker5" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker6" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker7" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker8" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker9" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker10" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker11" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker12" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker13" onclick="removeSpeaker(this.id)"></p>
+                    <p class="blockText speakerItem" id="speaker14" onclick="removeSpeaker(this.id)"></p>
+                </div>
+
+
+
+            </div>
+            
+            <div class="row" id="secondaryTimerRow">
+                <div id="debateTimer" class="block">
+                    <div id="timerholder"><span id="debateTime"></span></div>
+                    <input type="button" id="startDebatebutton" class="clickbutton" value="Start" onclick="startDebate()">
+                    <input type="button" id="stopDebatebutton" class="clickbutton" value="Stop" onclick="stopDebate()">
+                    <input type="button" value="Reset" class="clickbutton" id="resetDebatebutton" onclick="resetDebate()">
+                    <input type="button" value="Set Debate Time" class="clickbutton" id="debateTimeButton" onclick="setDebateTime()">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col span-1-of-2">
+            <div class="row">
+                <div id="resolutions" class="block"><h2>Resolutions, Points and Motions</h2><hr><textarea id="textbox" rows="4" cols="50" onClick="this.setSelectionRange(0, this.value.length)">Paste resolutions, Points and/or Motions here.</textarea></div>
+            </div>
+
+            <div class="row">
+                <div id="timer" class="block">
+                    <div id="timerholder"><span id="time"></span></div>
+                    <input type="button" id="startbutton" class="clickbutton" value="Start" onclick="start()">
+                    <input type="button" id="stopbutton" class="clickbutton" value="Stop" onclick="stop()">
+                    <input type="button" value="Reset" class="clickbutton" id="resetbutton" onclick="reset()">
+                    <input type="button" value="Set Speak Time" class="clickbutton" id="speakTimeButton" onclick="setSpeakingTime()">
+                    <input type="button" value="Speak" class="clickbutton" id="speakButton" onclick="speak()">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
