@@ -5,14 +5,14 @@ var committee1 = {
     countries: ["Brazil", "India", "China", "Norway", "Australia", "Canada", "USA", "Bangladesh", "Japan", "New Zealand", "France", "Congo", "Russia", "Iceland", "Germany",  "Netherlands", "Saudi Arabia", "Greenland", "Marshall Islands"]
 };
 
-var committee1 = {
+var committee2 = {
     name: "General Assembly 2",
     topics: ["Climate Change"],
     countries: ["Brazil", "India", "China", "Norway", "Australia", "Canada", "USA", "Bangladesh", "Japan", "New Zealand", "France", "Congo", "Russia", "Iceland", "Germany",  "Netherlands", "Saudi Arabia", "Greenland", "Marshall Islands"]
 };
 
 //array to store all committees
-var committes = [committee1];
+var committes = [committee1, committee2];
 
 //various indices and variables to keep track of changes
 var currentCommittee = 0;
@@ -93,6 +93,7 @@ function loadMembers() {
 function changeMembers() {
     for (var i = 0; i < committes[currentCommittee].countries.length; i++) {
         document.getElementById("member"+i).innerHTML = committes[currentCommittee].countries[i];
+        console.log(committes[currentCommittee].countries[i])
     }
 
     if (committes[currentCommittee].countries.length < 15) {
