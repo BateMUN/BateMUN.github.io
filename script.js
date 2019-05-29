@@ -5,6 +5,12 @@ var committee1 = {
     countries: ["Brazil", "India", "China", "Norway", "Australia", "Canada", "USA", "Bangladesh", "Japan", "New Zealand", "France", "Congo", "Russia", "Iceland", "Germany",  "Netherlands", "Saudi Arabia", "Greenland", "Marshall Islands"]
 };
 
+var committee1 = {
+    name: "General Assembly 2",
+    topics: ["Climate Change"],
+    countries: ["Brazil", "India", "China", "Norway", "Australia", "Canada", "USA", "Bangladesh", "Japan", "New Zealand", "France", "Congo", "Russia", "Iceland", "Germany",  "Netherlands", "Saudi Arabia", "Greenland", "Marshall Islands"]
+};
+
 //array to store all committees
 var committes = [committee1];
 
