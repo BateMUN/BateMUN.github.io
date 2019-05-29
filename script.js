@@ -1,19 +1,12 @@
 //Committe 1 of the BateMUN Conference and all the relevant details
 var committee1 = {
-    name: "ECO SOC",
-    topics: ["Economic Sustainability", "Water"],
-    countries: ["USA", "Canada", "China", "Russia", "Mexico", "Brazil", "Venezuela", "Greece", "Germany", "India", "Kenya", "South Africa", "Iran", "Saudi Arabia", "Syria"]
-};
-
-//Committe 2 of the BateMUN Conference and all the relevant details
-var committee2 = {
-    name: "Human Rights Council",
-    topics: ["Refugee Crisis", "Disease/Disease Prevention"],
-    countries: ["USA", "Canada", "China", "Russia", "Mexico", "Brazil", "Venezuela", "Greece", "Germany", "India", "Kenya", "South Africa", "Iran", "Saudi Arabia", "Syria"]
+    name: "General Assembly",
+    topics: ["Climate Change"],
+    countries: ["Brazil", "India", "China", "Norway", "Australia", "Canada", "USA", "Bangladesh", "Japan", "New Zealand", "France", "Congo", "Russia", "Iceland", "Germany",  "Netherlands", "Saudi Arabia", "Greenland", "Marshall Islands"]
 };
 
 //array to store all committees
-var committes = [committee1, committee2];
+var committes = [committee1];
 
 //various indices and variables to keep track of changes
 var currentCommittee = 0;
