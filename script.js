@@ -1,14 +1,14 @@
 //Committe 1 of the BateMUN Conference and all the relevant details
 var committee1 = {
-    name: "General Assembly",
-    topics: ["Climate Change"],
-    countries: ["Brazil", "India", "China", "Norway", "Australia", "Canada", "USA", "Bangladesh", "Japan", "New Zealand", "France", "Congo", "Russia", "Iceland", "Germany",  "Netherlands", "Saudi Arabia", "Greenland", "Marshall Islands"]
+    name: "Human Rights Council",
+    topics: ["LGBTQ+", "Counter-Terrorism"],
+    countries: ["USA", "Canada", "United Kingdom", "Libya", "Iraq", "Saudi Arabia", "Yemen", "France", "China", "Venezuela", "Syria", "Pakistan", "India", "Russia", "Israel", "Brunei", "Iraq"]
 };
 
 var committee2 = {
-    name: "General Assembly 2",
-    topics: ["Climate Change"],
-    countries: ["Brazil", "India", "China", "Norway", "Australia", "Canada", "USA", "Bangladesh", "Japan", "New Zealand", "France", "Congo", "Russia", "Iceland", "Germany",  "Netherlands", "Saudi Arabia", "Greenland", "Marshall Islands"]
+    name: "UNESCO",
+    topics: ["Gender Equality", "Safe Access"],
+    countries: ["Yemen", "USA", "Canada", "Uganada", "China", "Saudi Arabia", "Iran", "Afghanistan", "Sweden", "Syria", "Inodnesia", "France", "UK", "India", "Kenya", "Vietnam", "Nigeria"~]
 };
 
 //array to store all committees
