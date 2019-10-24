@@ -8,7 +8,7 @@ var committee1 = {
 var committee2 = {
     name: "UNESCO",
     topics: ["Gender Equality", "Safe Access"],
-    countries: ["Yemen", "USA", "Canada", "Uganada", "China", "Saudi Arabia", "Iran", "Afghanistan", "Sweden", "Syria", "Inodnesia", "France", "UK", "India", "Kenya", "Vietnam", "Nigeria"~]
+    countries: ["Yemen", "USA", "Canada", "Uganada", "China", "Saudi Arabia", "Iran", "Afghanistan", "Sweden", "Syria", "Inodnesia", "France", "UK", "India", "Kenya", "Vietnam", "Nigeria"]
 };
 
 //array to store all committees
